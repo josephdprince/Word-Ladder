@@ -9,7 +9,6 @@ using namespace std;
 class WordLadder {
  private:
    list<string> dict;
-   int comparisons = 0;
  public:
    WordLadder(const string &);
    void outputLadder(const string &, const string &, const string &);
