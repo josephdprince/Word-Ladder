@@ -37,9 +37,8 @@ int main() {
    }
 
    try {
-	   WordLadder wl(dictFile);
-      wl.setOptimization(true);
-	   wl.outputLadder(wordBegin, wordEnd, outFile);
+      WordLadder wl(dictFile);
+      wl.outputLadder(wordBegin, wordEnd, outFile);
    }
    catch (invalid_argument& excpt) {
       cout << excpt.what() << endl;
