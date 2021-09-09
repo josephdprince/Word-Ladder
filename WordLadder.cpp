@@ -141,11 +141,12 @@ void printStack(stack<string> &ladder, ofstream &fout) {
     stack<string> printStack;
 
     while(!ladder.empty()) {
-        printStack.push(ladder.top()); //putting the stack in reverse order (word ladder was inserted in reverse because of the nature of a stack)
+        // Puts our ladder into reverse order since it was backwards
+        printStack.push(ladder.top());
         ladder.pop();
     }
     while(!printStack.empty()) {
-        fout << printStack.top() << endl; //put the word ladder to file output
+        fout << printStack.top() << endl;
         printStack.pop();
     }
 }
